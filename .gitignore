@@ -1,0 +1,15 @@
+cat <<EOF > .gitignore
+# Terraform state
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+*.tfvars.backup
+*.tfplan
+# IDEs
+.vscode/
+.idea/
+# Outros arquivos sensíveis
+*.pem
+*.key
+EOF
